@@ -1,0 +1,16 @@
+ul {
+  margin-left: 12rem;
+  margin-right: 6rem;
+  list-style-type: none;
+  padding: 0;
+  max-width: 15rem;
+}
+
+li {
+  background-color: rgb(213, 246, 246);
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 4px;
+  text-align: center;
+  border-radius: 4px;
+}

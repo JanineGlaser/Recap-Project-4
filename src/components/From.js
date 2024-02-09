@@ -2,7 +2,7 @@ import "./Form.css";
 
 export default function Form({ onAddActivity }) {
   function handleSubmit(event) {
-    event.prevetDefault();
+    event.preventDefault();
 
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
@@ -16,7 +16,7 @@ export default function Form({ onAddActivity }) {
   }
 
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <header>
         <h2> 🎀 Add a new Activity 🎀 </h2>
       </header>

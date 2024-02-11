@@ -25,7 +25,7 @@ export default function Form({ onAddActivity }) {
           <label className="activities" htmlFor="activity">
             Name of the activity:{" "}
           </label>
-          <br></br>
+
           <br></br>
           <input type="text" name="name" id="activity" />
         </div>
@@ -35,7 +35,7 @@ export default function Form({ onAddActivity }) {
           <label className="check-box" htmlFor="weather-check">
             Nice weather activity:
           </label>
-          <br></br>
+
           <br></br>
           <input type="checkbox" name="forNiceWeather" id="weather-check" />
         </div>

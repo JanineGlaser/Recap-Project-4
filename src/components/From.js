@@ -18,7 +18,7 @@ export default function Form({ onAddActivity }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <header>
-        <h2> 🎀 Add a new Activity 🎀 </h2>
+        <h2> 🎀 Add your new activity 🎀 </h2>
       </header>
       <main>
         <div>

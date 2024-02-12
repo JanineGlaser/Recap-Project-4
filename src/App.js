@@ -52,6 +52,10 @@ export default function App() {
     setActivities([{ ...newActivities, id: uid() }, ...activities]);
   }
 
+  function handleDeleteActivity(id) {
+    setActivities(activities.filter((activity) => activity.id !== id));
+  }
+
   return (
     <div className="App">
       <header className="header"></header>
@@ -82,12 +86,14 @@ export default function App() {
       <List
         activities={filteredBadWeatherActivities}
         isGoodWeather={isBadWeather}
+        onDeleteActivity={handleDeleteActivity}
       />
       <h4> Nice weather activities </h4>
       <List
         activities={filteredGoodWeatherActivities(isGoodWeather)}
         is
         isGoodWeather={isGoodWeather}
+        onDeleteActivity={handleDeleteActivity}
       />
     </div>
   );

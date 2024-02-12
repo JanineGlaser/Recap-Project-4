@@ -29,6 +29,8 @@ export default function App() {
       }
     }
     fetchWeather();
+    const interval = setInterval(fetchWeather, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const isGoodWeather = true;
